@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="home.html">MAMR</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product_of_the_week.html">P.O.W.</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="create_account.html" class="register">Register</a>
+                <a href="login.html" class="login">Login</a>
+            </div>
+        </nav>
+    </header>
+    
+    
+    <section class="shop-section">
+        <h1>Shop</h1>
+        <p>Enjoy our variety</p>
+        <div class="shop-container">
+            <aside class="filters">
+                <h2>Seleccionar concesionario</h2>
+                <div class="filter-group">
+                    <h3>Compra online</h3>
+                    <label><input type="checkbox"> Precio Concesionario Disponible</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Modelos</h3>
+                    <label><input type="checkbox">BMW</label>
+                    <br>
+                    <label><input type="checkbox">Lexus</label>
+                    <br>
+                    <label><input type="checkbox">Honda</label>
+                    <br>
+                    <label><input type="checkbox">Suzuki</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Sistema de propulsión</h3>
+                    <label><input type="radio" name="propulsion" value="gasolina"> Gasolina</label><br>
+                    <label><input type="radio" name="propulsion" value="diesel"> Diésel</label><br>
+                    <label><input type="radio" name="propulsion" value="electrico"> Eléctrico</label><br>
+                    <label><input type="radio" name="propulsion" value="hibrido"> Híbrido</label>
+                    
+                </div>
+                <div class="filter-group">
+                    <h3>Precio</h3>
+                    <label>Min: <input type="number" placeholder="Mínimo"></label><br>
+                    <label>Max: <input type="number" placeholder="Máximo"></label>
+                </div>
+                <div class="filter-group">
+                    <h3>Cambio y tipo de tracción</h3>
+                    <label><input type="checkbox"> Automático</label><br>
+                    <label><input type="checkbox"> Manual</label>
+                </div>
+                <div class="filter-group">
+                    <h3>Color</h3>
+                    <select>
+                        <option value="todos">Todos los Colores</option>
+                        <option value="negro">Negro</option>
+                        <option value="blanco">Blanco</option>
+                        <option value="rojo">Rojo</option>
+                        <option value="azul">Azul</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <h3>Distintivo Ambiental</h3>
+                    <label><input type="radio" name="distintivo" value="c"> C</label><br>
+                    <label><input type="radio" name="distintivo" value="eco"> ECO</label><br>
+                    <label><input type="radio" name="distintivo" value="cero"> Cero Emisiones</label>
+                </div>
+                <button class="apply-filters">Aplicar filtros</button>
+            </aside>
+
+            <div class="product-list">
+                <div class="product-card">
+                    <img src="pngbmw.png" alt="BMW X1 sDrive18i">
+                    <h3>BMW X1 sDrive18i</h3>
+                    <p>xLine</p>
+                    <p><strong>60.052,35 €</strong></p>
+                    <p>Gasolina • 6,5 l/100km • 100 kW (136 CV)</p>
+                    <button>Comprar Producto</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="pngbmw.png" alt="BMW X1 sDrive18i">
+                    <h3>BMW X1 sDrive18i</h3>
+                    <p>xLine</p>
+                    <p><strong>56.531,35 €</strong></p>
+                    <p>Gasolina • 6,6 l/100km • 100 kW (136 CV)</p>
+                    <button>Comprar Producto</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="pngbmw.png" alt="BMW X1 sDrive18i">
+                    <h3>BMW M4 Competition</h3>
+                    <p>Coupe</p>
+                    <p><strong>151.790,59 €</strong></p>
+                    <p>Gasolina • 10,0 l/100km • 375 kW (510 CV)</p>
+                    <button>Comprar Producto</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="pngbmw.png" alt="BMW X1 sDrive18i">
+                    <h3>BMW M4 Competition</h3>
+                    <p>Coupe</p>
+                    <p><strong>151.790,59 €</strong></p>
+                    <p>Gasolina • 10,0 l/100km • 375 kW (510 CV)</p>
+                    <button>Comprar Producto</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="pngbmw.png" alt="BMW X1 sDrive18i">
+                    <h3>BMW M4 Competition</h3>
+                    <p>Coupe</p>
+                    <p><strong>151.790,59 €</strong></p>
+                    <p>Gasolina • 10,0 l/100km • 375 kW (510 CV)</p>
+                    <button>Comprar Producto</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="pngbmw.png" alt="BMW X1 sDrive18i">
+                    <h3>BMW M4 Competition</h3>
+                    <p>Coupe</p>
+                    <p><strong>151.790,59 €</strong></p>
+                    <p>Gasolina • 10,0 l/100km • 375 kW (510 CV)</p>
+                    <button>Comprar Producto</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-container">
+            <!-- Bloque 1: Menu, Helpdesk y About JIMO -->
+            <div class="footer-left">
+                <div class="footer-column">
+                    <h4>MENU</h4>
+                    <ul>
+                        <li><a href="#">Find a Store</a></li>
+                        <li><a href="#">Sign Up for Email</a></li>
+                        <li><a href="#">Send Us Feedback</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h4>HELPDESK</h4>
+                    <ul>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Delivery</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-column">
+                    <h4>ABOUT JIMO</h4>
+                    <ul>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Bloque 2: Derechos de autor, dirección y redes sociales -->
+            <div class="footer-right">
+                <p>&copy; 2024 JIMO, Inc. All Rights Reserved</p>
+                <div class="footer-address">
+                    <p>Primary Address</p>
+                    <p>VI, Lagos</p>
+                    <p>Nigeria</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#">E</a>
+                    <a href="#">E</a>
+                    <a href="#">E</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

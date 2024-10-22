@@ -1,0 +1,69 @@
+header {
+    background-color: #e6e6e6;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap; 
+    /* El wrap permitia que los elementos se reorganicen 
+    en varias líneas si es necesario */
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5rem;
+    /* separación entre las columnas, usamos el gap */
+}
+
+.nav-links a {
+    text-decoration: none;
+    /* usamos el text decoration para quitarle el subrayado */
+    color: black;
+    font-size: 1rem;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem; 
+    /* para poner un espacio entre botones */
+}
+
+/* Botones */
+.register, .login {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.register {
+    background-color: #0e141e;
+}
+
+.register:hover {
+    background-color: #244f96;
+}
+
+.login {
+    background-color: #575a5f;
+}
+
+.login:hover {
+    background-color: #244f96;
+}

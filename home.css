@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Carrusel */
+.carousel-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.carousel-content h2 {
+    font-size: 2.5rem;
+}
+
+.carousel-content p {
+    font-size: 1.2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #444;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.carousel-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Collections */
+.collections-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.collections-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.collections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.collection-item {
+    text-align: center;
+}
+
+.collection-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Special Edition */
+.special-edition {
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.special-edition img {
+    width: 100%;
+    height: auto;
+}
+
+.special-description {
+    padding: 20px;
+}
+
+.special-description h3 {
+    font-size: 1.5rem;
+}
+
+.special-description p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Most Popular */
+.most-popular {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.popular-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.popular-item {
+    text-align: center;
+}
+
+.popular-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.popular-item p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
