@@ -18,7 +18,7 @@ h1{
 #contenedor{
     width: 100%;
     max-width: 400px;
-    margin: 50px auto;
+    margin: 25vh auto;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -27,6 +27,7 @@ h1{
     height: 40vh;
 
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: center;  /* Centramos el contenido verticalmente */
     align-items: center;  /* Centramos el contenido horizontalmente */
