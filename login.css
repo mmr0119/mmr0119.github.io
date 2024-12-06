@@ -29,14 +29,14 @@ h1{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;  /* Centramos el contenido verticalmente */
-    align-items: center;  /* Centramos el contenido horizontalmente */
+    justify-content: center;  
+    align-items: center;
 }
 
 form{
     display: flex;
     flex-direction: column;
-    margin-top: 35px;
+    margin-top: 5px;
     align-items: center;
     width: 100%;
 }
