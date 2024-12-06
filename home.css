@@ -94,8 +94,9 @@ body {
 }
 
 .special-edition img {
-    width: 100%;
+    width: 50%;
     height: auto;
+    border-radius: 50px;
 }
 
 .special-description {
@@ -137,3 +138,62 @@ body {
     font-size: 1.1rem;
     margin-top: 10px;
 }
+
+/* estilos de p */
+/* Estilos generales para el enlace */
+.car-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
+  
+  /* Efecto al pasar el ratón */
+  .car-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos de la imagen */
+  .car-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Cambiar opacidad de la imagen cuando se pasa el ratón */
+  .car-link:hover .car-image {
+    opacity: 0.8;
+  }
+  
+  /* Estilos para el texto debajo de la imagen */
+  .car-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Cambio de color del texto al pasar el ratón */
+  .car-link:hover .car-name {
+    color: #007bff; /* Cambia al color que prefieras */
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .car-link {
+      margin: 5px;
+    }
+  
+    .car-name {
+      font-size: 1rem;
+    }
+  }
