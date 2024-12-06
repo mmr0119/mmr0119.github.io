@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="slider.css">
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 <body>
@@ -45,29 +46,18 @@
                     </div>
                 </div>
             </div>
-            <div class="carousel-controls">
-                <button class="prev">❮</button>
-                <button class="next">❯</button>
-            </div>
         </section>
 
         <!-- Slider -->
-
         <section class="image-slider">
             <div class="slider">
-                <div class="slide active">
-                    <img src="images/mazdarz7.jpeg" alt="Imagen 1 del restaurante">
+                <div class="slides">
+                    <div class="slide"><img src="images/miata.jpeg" alt="imagen1"></div>
+                    <div class="slide"><img src="images/paul_walker.jpeg"></div>
+                    <div class="slide"><img src="images/civi.jpeg"></div>
                 </div>
-                <div class="slide">
-                    <img src="images/bmw.jpeg" alt="Imagen 2 del restaurante">
-                </div>
-                <div class="slide">
-                    <img src="images/bmw.webp" alt="Imagen 3 del restaurante">
-                </div>
-            </div>
-            <div class="slider-controls">
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
+                <button id="atras" class="botonAtras" onclick="moveSlide(-1)">&#10094;</button>
+                <button id="delante" class="botonSiguiente" onclick="moveSlide(1)">&#10095;</button>
             </div>
         </section>        
     

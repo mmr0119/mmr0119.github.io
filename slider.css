@@ -1,0 +1,67 @@
+.image-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* Centra horizontalmente el bloque */
+    overflow: hidden;
+    width: 60%; /* Ancho fijo del slider (puedes ajustar este porcentaje) */
+    max-width: 1800px; /* Ancho máximo para pantallas grandes */
+    aspect-ratio: 4 / 3; /* Relación de aspecto (ancho / alto) */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar el slider */
+    background-color: #f4f4f4; /* Fondo para evitar áreas vacías */
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Asegura que las imágenes llenen el contenedor */
+}
+
+.slide {
+    flex: 0 0 100%; /* Cada slide ocupa todo el ancho del contenedor */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 100%; /* Todas las imágenes ocupan el ancho del contenedor */
+    height: 100%; /* Todas las imágenes ocupan la altura del contenedor */
+    object-fit: cover; /* Asegura que las imágenes se recorten para llenar el espacio sin distorsión */
+}
+
+.botonAtras,
+.botonSiguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    z-index: 10; /* Asegura que los botones estén sobre las imágenes */
+}
+
+.botonAtras:hover,
+.botonSiguiente:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro al pasar el cursor */
+}
+
+.botonAtras {
+    left: 10px; /* Botón a la izquierda */
+}
+
+.botonSiguiente {
+    right: 10px; /* Botón a la derecha */
+}

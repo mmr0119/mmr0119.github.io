@@ -1,29 +1,18 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelectorAll(".slide");
-    const prevButton = document.querySelector(".prev");
-    const nextButton = document.querySelector(".next");
+    let currentSlide = 0;
 
-    let currentIndex = 0;
+    function moveSlide(direction) {
+        const slides = document.querySelector('.slides');
+        const totalSlides = slides.children.length;
 
-    const showSlide = (index) => {
-        slides.forEach((slide, i) => {
-            slide.classList.toggle("active", i === index);
-        });
-    };
+        // Calcular nueva posición del slide
+        currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
 
-    const nextSlide = () => {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-    };
+        // Mover las diapositivas
+        slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+    }
 
-    const prevSlide = () => {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        showSlide(currentIndex);
-    };
-
-    nextButton.addEventListener("click", nextSlide);
-    prevButton.addEventListener("click", prevSlide);
-
-    // Cambio automático cada 5 segundos
-    setInterval(nextSlide, 1000);
+    // Vincular botones a la función
+    document.querySelector('.botonAtras').addEventListener('click', () => moveSlide(-1));
+    document.querySelector('.botonSiguiente').addEventListener('click', () => moveSlide(1));
 });
