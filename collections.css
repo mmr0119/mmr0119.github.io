@@ -26,8 +26,8 @@
 }
 
 .collection-item img {
-    width: 100%;
-    height: auto;
+    width: 500px;
+    height: 300px;
     display: block;
     transition: transform 0.3s ease;
 }
@@ -45,11 +45,11 @@
     align-items: center;
     font-weight: bold;
     font-size: 1.2rem;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, opacity 0.3s ease;;
 }
 
 .collection-item:hover .overlay {
-    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro que cubre toda la imagen */
+    background: rgba(0, 0, 0, 0.9); /* Fondo oscuro que cubre toda la imagen */
 }
 
 .collection-item:hover img {
@@ -68,5 +68,14 @@
 }
 
 .collections-section .see-more:hover {
-    background-color: #444;
+    background-color: #1b1a1a;
+}
+
+.collection-item p {
+    font-size: 0rem; /* Tamaño de fuente inicial */
+    transition: font-size 0.3s ease; /* Añadimos transición para que el cambio sea suave */
+}
+
+.collection-item:hover p {
+    font-size: 4rem; /* Tamaño de fuente al hacer hover */
 }
