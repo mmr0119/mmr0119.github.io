@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <link href="public/bootstrap.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid mx-auto"> 
+                <a class="navbar-brand mx-auto" href="./index.html">MAMR</a> 
+                <audio id="backgroundAudio" autoplay loop controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                </audio>
+                <button class="mute-button btn btn-light" id="muteButton">Silenciar música</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav"> 
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./product_of_the_week.html">P.O.W.</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./collections.html">Collections</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./eventos.html">Eventos</a> 
+                        </li>
+                    </ul>
+                    <div class="auth-buttons">
+                        <a href="./create_account.html" class="btn btn-outline-light">Register</a>
+                        <a href="./login.html" class="btn btn-outline-light">Login</a>
+                    </div>
+                </div>
+            </div>
+        </nav>        
+    </header>
+
+    <!-- Sección de eventos -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4">Upcoming Events</h2>
+        <p class="text-center mb-5">Don't miss out on our exciting upcoming events. Here's what's coming:</p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Evento 1 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/eventos.jpg" class="card-img-top" alt="Event 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Car Show 2024</h5>
+                        <p class="card-text"><strong>Date:</strong> January 15, 2024</p>
+                        <p class="card-text"><strong>Location:</strong> Las Vegas, NV</p>
+                        <p class="card-text">Join us for an amazing car show with the latest models and exclusive previews.</p>
+                        <a href="#" class="btn btn-dark">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evento 2 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/eventos2.jpg" class="card-img-top" alt="Event 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Track Day Challenge</h5>
+                        <p class="card-text"><strong>Date:</strong> February 10, 2024</p>
+                        <p class="card-text"><strong>Location:</strong> Silverstone Circuit, UK</p>
+                        <p class="card-text">Experience the thrill of driving on the track. Join the challenge and compete!</p>
+                        <a href="#" class="btn btn-dark">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evento 3 -->
+            <div class="col">
+                <div class="card">
+                    <img src="images/eventos3.jpg" class="card-img-top" alt="Event 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Luxury Car Auction</h5>
+                        <p class="card-text"><strong>Date:</strong> March 5, 2024</p>
+                        <p class="card-text"><strong>Location:</strong> Paris, France</p>
+                        <p class="card-text">Bid on rare and luxurious cars at one of the most prestigious auctions in the world.</p>
+                        <a href="#" class="btn btn-dark">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div>
+                    <h4>MENU</h4>
+                    <ul>
+                        <li><a href="#" class="text-light">Find a Store</a></li>
+                        <li><a href="#" class="text-light">Sign Up for Email</a></li>
+                        <li><a href="#" class="text-light">Send Us Feedback</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>HELPDESK</h4>
+                    <ul>
+                        <li><a href="#" class="text-light">Order Status</a></li>
+                        <li><a href="#" class="text-light">Delivery</a></li>
+                        <li><a href="#" class="text-light">Returns</a></li>
+                        <li><a href="#" class="text-light">Payment Options</a></li>
+                        <li><a href="#" class="text-light">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>ABOUT JIMO</h4>
+                    <ul>
+                        <li><a href="#" class="text-light">Careers</a></li>
+                        <li><a href="#" class="text-light">Investors</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p>&copy; 2024 JIMO, Inc. All Rights Reserved</p>
+                <div>
+                    <p>Primary Address: VI, Lagos, Nigeria</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0drXz6f14Pjs1FdxpaQZJgU20fXaNlpeGEI71sbk7XmBvq4y" crossorigin="anonymous"></script>
+    <script src="audio.js"></script>
+</body>
+</html>
